@@ -244,7 +244,7 @@ public class EmulatorCheckUtil {
         int result;
         String tempValue = manufacturer.toLowerCase();
         if (tempValue.contains("genymotion")) result = RESULT_EMULATOR;
-        //else if (tempValue.contains("netease")) result = RESULT_EMULATOR;//网易MUMU模拟器
+        else if (tempValue.contains("netease")) result = RESULT_EMULATOR;//网易MUMU模拟器
         else result = RESULT_UNKNOWN;
         return new CheckResult(result, manufacturer);
     }
